@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <style>
+      .add-faculty {
+           margin: 20px;
+      }
+    .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-control input,
+        .form-control select {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 45%;
+        }
+        .form-control input[type="radio"]{
+          display: inline-block;
+            width: auto;
+        }
+        button {
+            background-color: #d90707;
+            border: 1px solid rgb(213, 9, 9);
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 10%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+  </style>
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="mca.css">
+    <script src="admin.js"></script>
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+    <i class='bx bx-institution'></i>
+      <span class="logo_name">TKMCE</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="admin dashboard.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+            <a href="department.html" class="active">
+              <i class='bx bx-user' ></i>
+              <span class="links_name">Department</span>
+            </a>
+          </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-calendar' ></i>
+            <span class="links_name">Calendar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <!--navigation bar-->
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Department</span>
+      </div>
+      <div class="notification">
+        <i class='bx bx-notification' ></i>
+       </div>
+      <div class="profile-details">
+        <i class='bx bx-user' ></i>
+        <span class="admin_name">Admin</span>
+      </div>
+    </nav>
+    <!--menu bar-->
+     <div class="home-content">
+      <div class="menu">
+      <ul>
+        <li><a href="#">Faculty Management</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="add faculty.html">Add Faculty</a></li>
+              <li><a href="#">Remove Faculty</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">People</a></li>
+        <li> <a href="#">Batch Management</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="#">Add Batch</a></li>
+              <li><a href="#">Remove Batch</a></li>
+            </ul>
+          </div> 
+        </li>
+      </ul>
+      </div>
+      <br><br>
+      <!--add faculty-->
+    <div class="add-faculty">
+        <form id="form">
+        <div class="form-control">
+          <label for="name" id="label-name">Name</label>
+          <input type="text" id="name"/>
+           
+      </div>
+        <div class="form-control">
+          <label for="email" id="label-email">Email</label>
+          <input type="email" id="email"/>  
+      </div>
+      <div class="form-control">
+        <label for="phone" id="label-phone">Phone Number</label>
+        <input type="text" id="phone"/>  
+      </div>
+      <div class="form-control">
+        <label for="role" id="label-role">Role</label>
+        <label for="ans" id="label-ans">
+          <input type="radio" id="teacher" name="teach">Teacher</input>
+          <input type="radio" id="advisor" name="adv">Advisor</input>
+        </label>
+      </div>
+      <div class="form-control">
+            <label for="batch" id="label-batch"> Batch </label>
+            <select name="value" id="value">
+                <option value="2021-2023">2021-2023</option>
+                <option value="2020-2022">2020-2022</option>
+                <option value="2019-2022">2019-2022</option>
+                <option value="2018-2021">2018-2021</option>
+            </select>  
+        </div>
+        <div class="form-control">
+          <label for="userid" id="label-userid">User ID</label>
+          <input type="text" id="userid"/>  
+        </div>
+        <div class="form-control">
+          <label for="password" id="label-pass">Password</label>
+          <input type="password" id="pswd"/>  
+        </div>
+        <button type="submit" value="submit" onclick="submit"> Submit</button>
+        </form>
+    </div>
+  </section>
+</body>
+</html>
