@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <style>
+        .add-batch {
+             margin: 20px;
+        }
+      .form-control {
+              text-align: left;
+              margin-bottom: 25px;
+          }
+          .form-control label {
+              display: block;
+              margin-bottom: 10px;
+          }
+          .form-control input
+           {
+              border: 1px solid #777;
+              border-radius: 2px;
+              font-family: inherit;
+              padding: 10px;
+              display: block;
+              width: 45%;
+          }
+          button {
+              background-color: #d90707;
+              border: 1px solid rgb(213, 9, 9);
+              border-radius: 2px;
+              font-family: inherit;
+              font-size: 21px;
+              display: block;
+              width: 10%;
+              margin-top: 50px;
+              margin-bottom: 20px;
+          }
+    </style>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="mca.css">
+    <script src="admin.js"></script>
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+    <i class='bx bx-institution'></i>
+      <span class="logo_name">TKMCE</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="admin dashboard.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+            <a href="department.html" class="active">
+              <i class='bx bx-user' ></i>
+              <span class="links_name">Department</span>
+            </a>
+          </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-calendar' ></i>
+            <span class="links_name">Calendar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Department</span>
+      </div>
+      <div class="notification">
+        <i class='bx bx-notification' ></i>
+       </div>
+      <div class="profile-details">
+        <i class='bx bx-user' ></i>
+        <span class="admin_name">Admin</span>
+      </div>
+    </nav>
+     <div class="home-content">
+      <div class="menu">
+      <ul>
+        <li><a href="#">Faculty Management</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="#">Add Faculty</a></li>
+              <li><a href="#">Remove Faculty</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">People</a></li>
+        <li> <a href="#">Batch Management</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="#">Add Batch</a></li>
+              <li><a href="#">Remove Batch</a></li>
+            </ul>
+          </div> 
+        </li>
+      </ul>
+      </div>
+    </div>
+    <!--add batch-->
+    <div class="add-batch">
+        <div class="form-control">
+          <label for="batch-name" id="label-batch-name">Batch Name</label>
+          <input type="text" id="batch-name"/>  
+        </div>
+        <div class="form-control">
+            <label for="commencement-year" id="label-c-year">Comencement Year</label>
+            <input type="text" id="c-year"/>  
+          </div>
+        <div class="form-control">
+          <label for="completion-year" id="label-co-year">Course Completion Year</label>
+          <input type="password" id="pswd"/>  
+        </div>
+        <button type="submit" value="submit" onclick="submit"> Submit</button>
+        </form>
+    </div>
+  </section>
+
+</body>
+</html>
