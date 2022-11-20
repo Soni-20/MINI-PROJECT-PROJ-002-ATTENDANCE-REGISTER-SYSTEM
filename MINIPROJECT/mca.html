@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <style>
+   .menu{
+    background-color: rgb(4, 1, 29);
+    text-align: center;
+   }
+   .menu ul{
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+   }
+   .menu ul li{
+    width: 230px;
+    margin: 15px;
+    padding:5px;
+   }
+   .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+   }
+   .menu ul li:hover{
+   background: #0d0141;
+   }
+   .sub-menu{
+    display: none;
+   }
+   .menu ul li:hover .sub-menu{
+    display:block;
+    position:absolute;
+    background-color:rgb(4, 1, 29);
+    margin-top:15px;
+    margin-left:15px;
+   }
+   .menu ul li:hover .sub-menu ul{
+    display: block;
+    margin: 10px;
+   }
+   
+  </style>
+ 
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="admin.css">
+    <script src="admin.js"></script>
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+    <i class='bx bx-institution'></i>
+      <span class="logo_name">TKMCE</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+            <a href="#" class="active">
+              <i class='bx bx-user' ></i>
+              <span class="links_name">Department</span>
+            </a>
+          </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-calendar' ></i>
+            <span class="links_name">Calendar</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Department</span>
+      </div>
+      <div class="notification">
+        <i class='bx bx-notification' ></i>
+       </div>
+      <div class="profile-details">
+        <i class='bx bx-user' ></i>
+        <span class="admin_name">Admin</span>
+      </div>
+    </nav>
+     <div class="home-content">
+      <div class="menu">
+      <ul>
+        <li><a href="#">Faculty Management</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="#">Add Faculty</a></li>
+              <li><a href="#">Remove Faculty</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">People</a></li>
+        <li> <a href="#">Batch Management</a>
+          <div class="sub-menu">
+            <ul>
+              <li><a href="#">Add Batch</a></li>
+              <li><a href="#">Remove Batch</a></li>
+            </ul>
+          </div> 
+        </li>
+      </ul>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
